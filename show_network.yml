@@ -4,7 +4,7 @@
   tasks:
     - name: show network
       cp_network_facts:
-        name: "Demo day object1"
+        name: "Demo day object21"
         version: "1.5"
       register: show_network_response
         
