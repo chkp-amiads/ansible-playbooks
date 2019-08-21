@@ -1,0 +1,12 @@
+- hosts: checkpoint
+  connection: httpapi
+
+  tasks:
+    - name: show network
+      cp_network_facts:
+        name: "Demo day object"
+        version: "1.3"
+      register: show_network_response
+        
+    - debug:
+        var: show_network_response
