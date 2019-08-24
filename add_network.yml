@@ -1,5 +1,5 @@
 - hosts: checkpoint
-  connection: smart
+  connection: httpapi
 
   tasks:
     - name: add network
