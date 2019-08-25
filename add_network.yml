@@ -4,14 +4,14 @@
   tasks:
     - name: add network
       cp_network:
-        name: "Demo day21 object11212"
-        subnet: "3.12.1.0"
+        name: "Demo day121 object11212"
+        subnet: "3.12.11.0"
         mask_length: 24
         state: "present"
         version: "1.2"
         nat_settings:
           auto_rule: true
-          ipv4_address: 192.3.33.3
+          ipv4_address: 192.13.33.3
         auto_publish_session: true
         #comments: "comment333"
       register: add_network_response
