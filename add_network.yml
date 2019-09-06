@@ -4,8 +4,8 @@
   tasks:
     - name: add network
       cp_network:
-        name: "Demo day1121 object11212"
-        subnet: "3.112.11.0"
+        name: "Demo1 day1121 object11212"
+        subnet: "33.112.11.0"
         mask_length: 24
         state: "present"
         version: "1.2"
