@@ -15,7 +15,8 @@
         vpn: 
           - RemoteAccess
         service: 
-          - ftp
+          - ftp 
+          - ssh
         content:
           - "Document File"
           - "Archive File" 
