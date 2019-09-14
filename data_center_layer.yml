@@ -12,7 +12,6 @@
           - Sales
         destination:
           - FTP_Int
-          - FileServer
         vpn: 
           - RemoteAccess
         service: 
