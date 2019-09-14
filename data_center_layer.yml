@@ -27,7 +27,7 @@
       cp_mgmt_access_rule:
         layer: "Data Center Layer"
         name: "Only Finance department has access to reports"
-        position: 2
+        position: "2"
         source:
           - "Finance User"
         destination:
@@ -42,7 +42,7 @@
       cp_mgmt_access_rule:
         layer: "Data Center Layer"
         name: "Internal DNS Access"
-        position: 3
+        position: "3"
         source:
           - "DMZZone"
           - "InternalZone"
@@ -56,7 +56,7 @@
       cp_mgmt_access_rule:
         layer: "Data Center Layer"
         name: "Customer Service Server"
-        position: 4
+        position: "4"
         service: 
           - "Customer Service Portal"
         track:
@@ -67,4 +67,12 @@
       cp_mgmt_access_rule:
         layer: "Data Center Layer"
         name: "Cleanup"
-        position: 5
+        position: "5"
+        
+    - name: publish
+      cp_mgmt_publish:
+      register: publish_response
+  
+    - debug:
+        var: publish_response
+        
