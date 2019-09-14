@@ -3,11 +3,6 @@
 
   tasks:
     
-    - name: Create web server for sales
-      cp_mgmt_host:
-        name: "Sales Web Server"
-        ip_address: 10.0.0.131
-        
     - name: Create rule - Mobile Access for Internal FS
       cp_mgmt_access_rule:
         layer: "Data Center Layer"
@@ -16,13 +11,11 @@
         source:
           - Sales
         destination:
-          - "Sales Web Server"
           - FTP_Int
         vpn: 
           - RemoteAccess
         service: 
           - ftp 
-          - http
         content:
           - "Document File"
           - "Archive File" 
