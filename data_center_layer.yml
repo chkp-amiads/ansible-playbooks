@@ -16,12 +16,10 @@
         source:
           - Sales
         destination:
-          - "Sales Web Server"
           - FTP_Int
         vpn: 
           - RemoteAccess
         service: 
-          - https 
           - ftp 
         content:
           - "Document File"
