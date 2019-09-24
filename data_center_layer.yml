@@ -2,8 +2,8 @@
   connection: httpapi
 
   tasks:
-   
-    - name: Create web server for sales
+    
+    - name:  Cereate web server for sales
       cp_mgmt_host:
         name: "Sales Web Server"
         ip_address: 10.0.0.131
