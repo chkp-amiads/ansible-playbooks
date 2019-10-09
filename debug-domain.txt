@@ -1,6 +1,0 @@
-import q
-
-q("DOMAIN")
-q(self.domain)
-
-cat $TMPDIR/q
